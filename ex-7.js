@@ -42,7 +42,17 @@ let orders = [
 ];
 
 // Start coding here
-let isArray;
-let creditCardTypeOfBlindermann;
-let productQuantityOfJoannet;
-let totalPurchaseOfDary;
+
+let isArray = Array.isArray(orders);
+let creditCardTypeOfBlindermann = orders.find(order => order.customerName === "Toinette Blindermann").creditCardType;
+let productQuantityOfJoannet = orders.find(order => order.customerName === "Anjela Joannet").productQuantity;
+let totalPurchaseOfDary = orders.find(order => order.customerName === "Celia Dary").productPrice * orders.find(order => order.customerName === "Celia Dary").productQuantity;
+
+console.log(isArray);
+console.log(creditCardTypeOfBlindermann)
+orders.find(order => order.customerName === "Toinette Blindermann").creditCardType = "visa";
+console.log(productQuantityOfJoannet)
+console.log(totalPurchaseOfDary)
+orders.shift();
+console.log(orders);
+

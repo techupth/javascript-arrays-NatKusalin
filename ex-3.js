@@ -1,3 +1,4 @@
+// Start coding here
 const employees = [
   {
     name: "James",
@@ -11,4 +12,8 @@ const employees = [
   },
 ];
 
-// Start coding here
+let alex = employees.find(employee => employee.name === "Alex");
+alex.hobbies.push("Watching basketball");
+
+console.log(employees[1]);
+console.log(employees[1].hobbies);

@@ -22,3 +22,6 @@ const employees = [
 ];
 
 // Start coding here
+
+employees.shift();
+console.log(employees.length);

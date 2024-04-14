@@ -11,6 +11,10 @@ const employees = [
   },
 ];
 // Start coding here
-let alex;
-let alexHobbies;
-let alexAndJamesAge;
+let alex = employees.find(employee => employee.name == "Alex").name;
+let alexHobbies = employees.find(employee => employee.name == "Alex").hobbies;
+let alexAndJamesAge = employees.find(employee => employee.name == "Alex").age + employees.find(employee => employee.name === "James").age;
+
+console.log(alex);
+console.log(alexHobbies);
+console.log(alexAndJamesAge);
